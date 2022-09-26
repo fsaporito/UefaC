@@ -1,0 +1,60 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage{enumitem} % Expand Enumerate List Capabilities
+\usepackage{verbatim} % Multiline Comment
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{standalone} % Standalone
+\usepackage{subfiles} % Subfiles Projects
+\usepackage{xcolor} % Color text with \textcolor{red}{colored text}
+
+\usepackage{tabularx}
+%\usepackage{pdfpages} % Used to add the frontspice as an external PDF
+
+\newcommand{\onlyinsubfile}[1]{#1}
+\newcommand{\notinsubfile}[1]{}
+
+\author{Saporito Francesco}
+\title{Uefa C}
+\date{\today}
+
+\begin{document}
+
+\renewcommand{\onlyinsubfile}[1]{}
+\renewcommand{\notinsubfile}[1]{#1}
+
+\maketitle
+
+\input{disclaimer/disclaimer.tex}
+
+\tableofcontents 
+
+\clearpage
+
+\subfile{introduzione/introduzione}
+
+\subfile{diritti dei bambini/diritti dei bambini}
+
+\subfile{regolamento di gioco/regolamento di gioco}
+
+\subfile{giustizia sportiva/giustizia sportiva}
+
+\subfile{carte federali/carte federali}
+
+\subfile{psicopedagogia/psicopedagogia}
+
+\subfile{medicina dello sport/medicina dello sport}
+
+\subfile{metodologia allenamento/metodologia allenamento}
+
+\subfile{tecnica e tattica calcistica/tecnica e tattica calcistica}
+
+\subfile{tecnica del portiere/tecnica del portiere}
+
+\subfile{calcio a 5/calcio a 5}
+
+\subfile{calcio femminile/calcio femminile}
+
+
+\end{document}
+ 
