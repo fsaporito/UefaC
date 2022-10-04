@@ -2,9 +2,9 @@ name: Filter
 on:
   workflow_call:
     outputs:
-      cmake:
+      latex_build:
         description: "Should compile latex into PDFs?"
-        value: ${{ jobs.filter.outputs.build }}
+        value: ${{ jobs.filter.outputs.latex_build }}
 
 jobs:
   filter:
