@@ -2,6 +2,10 @@
 pdflatex -jobname=UefaC -output-directory=PDF "uefaC.tex"
 pdflatex -jobname=UefaC -output-directory=PDF "uefaC.tex"
 
+# Build single documents: Allenatore
+pdflatex -jobname=allenatore -output-directory=PDF "allenatore/allenatore.tex"
+pdflatex -jobname=allenatore -output-directory=PDF "allenatore/allenatore.tex"
+
 # Build single documents: Calcio a 5
 pdflatex -jobname=calcio5 -output-directory=PDF "calcio a 5/calcio a 5.tex"
 pdflatex -jobname=calcio5 -output-directory=PDF "calcio a 5/calcio a 5.tex"
