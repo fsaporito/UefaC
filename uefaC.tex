@@ -11,12 +11,27 @@
 \usepackage{tabularx}
 %\usepackage{pdfpages} % Used to add the frontspice as an external PDF
 
-\newcommand{\onlyinsubfile}[1]{#1}
-\newcommand{\notinsubfile}[1]{}
+% Define commands to determine whether we are in a subfile or not
+\newcommand{\onlyinsubfile}[1]{
+    \ifSubfilesClassLoaded
+    { % Only in subfile
+        #1
+    }
+    { % Only in Main File
+    }
+}
+\newcommand{\notinsubfile}[1]{
+    \ifSubfilesClassLoaded
+    { % Only in subfile  
+    }
+    { % Only in Main File
+        #1
+    }
+}
 
-\author{Saporito Francesco}
-\title{Uefa C}
-\date{\today}
+\notinsubfile{\author{Saporito Francesco}}
+\notinsubfile{\title{Uefa C}}
+\notinsubfile{\date{\today}}
 
 \begin{document}
 
