@@ -23,8 +23,3 @@ rm -f *.log
 rm -f *.aux
 rm -f *.out
 rm -f *.toc
-
-
-# Copy files over to gdrive
-cd ..
-cp -r * "../../../../GDrive/sapo93/LatexFile/Sport Science/Uefa C"
