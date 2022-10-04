@@ -1,0 +1,17 @@
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Compile
+      uses: xu-cheng/texlive-action/full@v1
+      with:
+        run: |
+          bash build.sh
+    - name: Commit PDFs
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_user_name: latexbuilder-bot
+        commit_message: "Automated commit of built PDFs"
