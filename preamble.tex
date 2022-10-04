@@ -25,3 +25,18 @@
         #1
     }
 }
+
+% #1: Author #2: Title
+\newcommand{\subfilecover}[2]{
+    \onlyinsubfile{\author{#1}}
+    \onlyinsubfile{\title{#2}}
+    \onlyinsubfile{\date{\today}}
+}
+
+% #1: Chapter Title
+\newcommand{\subfileintro}[1]{
+    \onlyinsubfile{\maketitle}
+    \onlyinsubfile{\input{"../disclaimer/disclaimer.tex"}}
+    \onlyinsubfile{\tableofcontents}
+    \notinsubfile{\chapter{#1}}
+}
