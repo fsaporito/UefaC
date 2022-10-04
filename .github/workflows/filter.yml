@@ -1,0 +1,27 @@
+name: Filter
+on:
+  workflow_call:
+    outputs:
+      cmake:
+        description: "Should compile latex into PDFs?"
+        value: ${{ jobs.filter.outputs.build }}
+
+jobs:
+  filter:
+    runs-on: ubuntu-latest
+    outputs:
+      latex_build: ${{ steps.latex_build.outputs.latex_build }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          filters: |
+            latex_build:
+              - '**.tex'
+
+    - name: Is building latex files required?
+        id: latex_build
+        if: |
+          steps.filter.outputs.latex_build == 'true'
+        run: echo ::set-output name=latex_build::true
