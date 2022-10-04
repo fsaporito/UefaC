@@ -1,0 +1,27 @@
+\usepackage{enumitem} % Expand Enumerate List Capabilities
+\usepackage{verbatim} % Multiline Comment
+\usepackage{cite}
+\usepackage{hyperref}
+\usepackage{xcolor} % Color text with \textcolor{red}{colored text}
+\usepackage{tabularx}
+%\usepackage{pdfpages} % Used to add the frontspice as an external PDF
+
+\usepackage{subfiles} % Subfiles Projects
+
+% Define commands to determine whether we are in a subfile or not
+\newcommand{\onlyinsubfile}[1]{
+    \ifSubfilesClassLoaded
+    { % Only in subfile
+        #1
+    }
+    { % Only in Main File
+    }
+}
+\newcommand{\notinsubfile}[1]{
+    \ifSubfilesClassLoaded
+    { % Only in subfile  
+    }
+    { % Only in Main File
+        #1
+    }
+}
