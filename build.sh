@@ -14,6 +14,10 @@ pdflatex -jobname=calcio5 -output-directory=PDF "calcio a 5/calcio a 5.tex"
 pdflatex -jobname=calciofemminile -output-directory=PDF "calcio femminile/calcio femminile.tex"
 pdflatex -jobname=calciofemminile -output-directory=PDF "calcio femminile/calcio femminile.tex"
 
+# Build single documents: Carte Federali
+pdflatex -jobname=calciofemminile -output-directory=PDF "carte federali/carte federali.tex"
+pdflatex -jobname=calciofemminile -output-directory=PDF "carte federali/carte federali.tex"
+
 # Build single documents: Diritti dei Bambini
 pdflatex -jobname=dirittibambini -output-directory=PDF "diritti dei bambini/diritti dei bambini.tex"
 pdflatex -jobname=dirittibambini -output-directory=PDF "diritti dei bambini/diritti dei bambini.tex"
