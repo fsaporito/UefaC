@@ -22,13 +22,13 @@ pdflatex -jobname=cartefederali -output-directory=PDF "carte federali/carte fede
 pdflatex -jobname=dirittibambini -output-directory=PDF "diritti dei bambini/diritti dei bambini.tex"
 pdflatex -jobname=dirittibambini -output-directory=PDF "diritti dei bambini/diritti dei bambini.tex"
 
-# Build single documents: Giustizia Sportova
+# Build single documents: Giustizia Sportiva
 pdflatex -jobname=giustizia -output-directory=PDF "giustizia sportiva/giustizia sportiva.tex"
 pdflatex -jobname=giustizia -output-directory=PDF "giustizia sportiva/giustizia sportiva.tex"
 
-# Build single documents: Introduzione
-pdflatex -jobname=introduzione -output-directory=PDF "introduzione/introduzione.tex"
-pdflatex -jobname=introduzione -output-directory=PDF "introduzione/introduzione.tex"
+# Build single documents: Introduzione Uefa C
+pdflatex -jobname=introduzioneC -output-directory=PDF "introduzione uefa c/introduzione uefa c.tex"
+pdflatex -jobname=introduzioneC -output-directory=PDF "introduzione uefa c/introduzione uefa c.tex"
 
 # Build single documents: Medicina dello Sport
 pdflatex -jobname=medicina -output-directory=PDF "medicina dello sport/medicina dello sport.tex"
