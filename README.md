@@ -14,7 +14,7 @@ Contiene gli appunti delle seguenti materie:
 - [0 %] Metodologia dell'Allenamento
 - [0 %] Psicopedagogia
 - [x] Regolamento di Gioco
-- [0 %] Tecnica del Portiere
+- [90 %] Tecnica del Portiere
 - [50 %] Tecnica e Tattica Calcistica
 
 
